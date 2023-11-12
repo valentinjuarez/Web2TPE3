@@ -23,12 +23,12 @@ Get All Products:
         "categoryName": "Telefono Movil"
     }
 
-Get Product by ID:
-Endpoint: /productos/:ID
-Verbo: GET
-Descripción: Obtiene un producto específico por su ID.
-Uso: {ruta_servidor_apache}/api/productos/10
-Respuesta ejemplo:
+Get Product by ID:  
+⦿ Endpoint: /productos/:ID  
+⦿ Verbo: GET  
+⦿ Descripción: Obtiene un producto específico por su ID.  
+⦿ Uso: {ruta_servidor_apache}/api/productos/10  
+⦿ Respuesta ejemplo:  
 
     {
         "id_product": 10,
@@ -42,15 +42,15 @@ Respuesta ejemplo:
         "categoryName": "Telefono Movil"
     }
 
-Get Products with Sort and Order:
-Endpoint: /productos/:sort/:order
-Verbo: GET
-Descripción: Obtiene productos ordenados por un campo específico en un orden dado.
-Parámetros:
-:sort: Campo por el cual se ordenarán (opciones válidas: 'productName', 'model', 'price', 'weightKG', 'height_cm', 'storageGB', 'id_categoria').
-:order: Orden de clasificación (opciones válidas:'asc' o 'desc').
-Uso: {ruta_servidor_apache}/api/productos?sort=price&order=asc
-Respuesta ejemplo: 
+Get Products with Sort and Order:  
+⦿ Endpoint: /productos/:sort/:order  
+⦿ Verbo: GET  
+⦿ Descripción: Obtiene productos ordenados por un campo específico en un orden dado.  
+⦿ Parámetros:  
+     ⦿ :sort: Campo por el cual se ordenarán (opciones válidas: 'productName', 'model', 'price', 'weightKG', 'height_cm', 'storageGB', 'id_categoria').  
+     ⦿ :order: Orden de clasificación (opciones válidas:'asc' o 'desc').  
+⦿ Uso: {ruta_servidor_apache}/api/productos?sort=price&order=asc  
+⦿ Respuesta ejemplo:   
 
     {
         "id_product": 29,
@@ -73,15 +73,15 @@ Respuesta ejemplo:
         "id_categoria": 104
     }
 
-Get Products with Filtering:
-Endpoint: /productos/:filterBy/:filterValue
-Verbo: GET
-Descripción: Obtiene productos filtrados por un campo específico y su valor.
-Parámetros:
-:filterBy: Campo por el cual se aplicará el filtro (opciones válidas: 'productName').
-:filterValue: Valor por el cual se filtrarán los productos (opciones válidas: 'Celular', 'Parlante', 'Notebook', 'Tablet', 'Auriculares', 'Microfono', 'TV', 'Computadora').
-Uso: {ruta_servidor_apache}/api/productos?filterBy=productName&filterValue=Celular
-Respuesta ejemplo: 
+Get Products with Filtering:  
+⦿ Endpoint: /productos/:filterBy/:filterValue  
+⦿ Verbo: GET  
+⦿ Descripción: Obtiene productos filtrados por un campo específico y su valor.  
+⦿ Parámetros:  
+    ⦿ :filterBy: Campo por el cual se aplicará el filtro (opciones válidas: 'productName').  
+    ⦿ :filterValue: Valor por el cual se filtrarán los productos (opciones válidas: 'Celular', 'Parlante', 'Notebook', 'Tablet', 'Auriculares', 'Microfono', 'TV', 'Computadora').  
+⦿ Uso: {ruta_servidor_apache}/api/productos?filterBy=productName&filterValue=Celular  
+⦿ Respuesta ejemplo:  
 
     {  
         "id_product": 2,
@@ -114,12 +114,12 @@ Respuesta ejemplo:
         "id_categoria": 100
     }
 
-Create Product:
-Endpoint: /productos
-Verbo: POST
-Descripción: Crea un nuevo producto.
-Uso: {ruta_servidor_apache}/api/productos 
-Este Endpoint crea un nuevo producto a partir de los siguientes datos introducidos en el Body:
+Create Product:  
+⦿ Endpoint: /productos  
+⦿ Verbo: POST  
+⦿ Descripción: Crea un nuevo producto.  
+⦿ Uso: {ruta_servidor_apache}/api/productos  
+⦿ Este Endpoint crea un nuevo producto a partir de los siguientes datos introducidos en el Body:  
     {
         "productName": "Celular",
         "model": "Samsung Galaxy a'40'",
@@ -130,7 +130,7 @@ Este Endpoint crea un nuevo producto a partir de los siguientes datos introducid
         "id_categoria": 100
     }
 
-Respuesta ejemplo (devuelve el ultimo elemento insertado):
+⦿ Respuesta ejemplo (devuelve el ultimo elemento insertado):  
 
      {
         "id_product": 33,
@@ -143,12 +143,12 @@ Respuesta ejemplo (devuelve el ultimo elemento insertado):
         "id_categoria": 100
     }      
 
-Update Product by ID:
-Endpoint: /productos/:ID
-Verbo: PUT
-Descripción: Actualiza un producto existente por su ID.
-Uso: {ruta_servidor_apache}/api/productos/10
-Este Endpoint actualiza un producto a partir de los siguientes datos introducidos en el Body (sin incluir el id_product, ni el categoryName):
+Update Product by ID:  
+⦿ Endpoint: /productos/:ID  
+⦿ Verbo: PUT  
+⦿ Descripción: Actualiza un producto existente por su ID.  
+⦿ Uso: {ruta_servidor_apache}/api/productos/10  
+⦿ Este Endpoint actualiza un producto a partir de los siguientes datos introducidos en el Body (sin incluir el id_product, ni el categoryName):  
     {
         "productName": "Celular",
         "model": "Modelo actualizado",
@@ -159,7 +159,7 @@ Este Endpoint actualiza un producto a partir de los siguientes datos introducido
         "id_categoria": 100
     }
 
-Respuesta ejemplo: 
+⦿ Respuesta ejemplo:  
 
     {
         "id_product": 10,
