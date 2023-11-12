@@ -173,12 +173,76 @@ Update Product by ID:
     }
  
 ## Endpoints Category
+Get All Categories:  
+⦿ Endpoint: /categorias  
+⦿ Verbo: GET  
+⦿ Descripción: Obtiene todas las categorías disponibles.  
+⦿ Uso: {ruta_servidor_apache}/api/categorias 
+⦿ Respuesta ejemplo:  
 
+     {
+        "id_categoria": 100,
+        "categoryName": "Telefono Movil",
+        "descripcion": "Dispositivo inalámbrico que permite hacer llamadas, enviar mensajes, acceder a internet y mucho más mientras estás en movimiento. "
+    },
+    {
+        "id_categoria": 101,
+        "categoryName": "Audiovisual",
+        "descripcion": "Aparato tecnológico que integra tanto capacidades de audio como de video en un solo dispositivo. Puede incluir pantallas, altavoces, reproductores de video, cámaras, micrófonos y otros componentes diseñados para crear,                                  reproducir, registrar o transmitir contenido tanto visual como auditivo. "
+    }
+    
+Get Category by ID  
+⦿ Endpoint: /categorias/:ID 
+⦿ Verbo: GET  
+⦿ Descripción: Obtiene 1 categoria segun su ID.  
+⦿ Uso: {ruta_servidor_apache}/api/categorias/100  
+⦿ Respuesta ejemplo:  
 
+    {
+        "id_categoria": 100,
+        "categoryName": "Telefono Movil",
+        "descripcion": "Dispositivo inalámbrico que permite hacer llamadas, enviar mensajes, acceder a internet y mucho más mientras estás en movimiento. "
+    }
 
+Create Category  
+⦿ Endpoint: /categorias  
+⦿ Verbo: POST  
+⦿ Descripción: Crea una nueva categoria.  
+⦿ Uso: {ruta_servidor_apache}/api/categorias  
+⦿ Este Endpoint crea una nueva categoria a partir de los siguientes datos introducidos en el Body:  
 
+    {
+        "categoryName": "Audiovisual",
+        "descripcion": "Aparato tecnológico que integra tanto capacidades de audio como de video en un solo dispositivo. Puede incluir pantallas, altavoces, reproductores de video, cámaras, micrófonos y otros componentes diseñados para crear,                                    reproducir, registrar o transmitir contenido tanto visual como auditivo. "
+    }
+    
+⦿ Respuesta ejemplo:  
 
+    {
+        "id_categoria": 109,
+        "categoryName": "Audiovisual",
+        "descripcion": "Aparato tecnológico que integra tanto capacidades de audio como de video en un solo dispositivo. Puede incluir pantallas, altavoces, reproductores de video, cámaras, micrófonos y otros componentes diseñados para crear,                                    reproducir, registrar o transmitir contenido tanto visual como auditivo. "
+    }
 
+Update Category by ID
+⦿ Endpoint: /categorias/:ID  
+⦿ Verbo: PUT  
+⦿ Descripción: Actualiza una categoria ya existente.  
+⦿ Uso: {ruta_servidor_apache}/api/categorias/106  
+⦿ Este Endpoint actualiza una categoria a partir de los siguientes datos introducidos en el Body:  
+
+        {
+            "categoryName": "Sonido",
+            "descripcion": "Dispositivo tecnológico que tiene la capacidad de producir, registrar, reproducir o transmitir sonido. Estos dispositivos utilizan altavoces, micrófonos u otros componentes para generar ondas sonoras que pueden ser percibidas                             por nuestros oídos."
+        }
+
+⦿ Respuesta ejemplo (devuelve el ultimo elemento insertado):  
+
+    {
+        "id_categoria": 110,
+        "categoryName": "Sonido",
+        "descripcion": "Dispositivo tecnológico que tiene la capacidad de producir, registrar, reproducir o transmitir sonido. Estos dispositivos utilizan altavoces, micrófonos u otros componentes para generar ondas sonoras que pueden ser percibidas por                         nuestros oídos."
+    }
 
 
 
