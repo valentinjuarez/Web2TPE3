@@ -4,7 +4,7 @@ Juarez, Valentin (Contacto: valenjua06@gmail.com) Miembro A y B.
 ## EndPoints Product
 La dirección base de la API es la siguiente:
 {ruta_servidor_apache}/api
-Get All Products
+Get All Products:
 Endpoint: /productos
 Verbo: GET
 Descripción: Obtiene todos los productos disponibles.
@@ -23,7 +23,7 @@ Respuesta ejemplo:
         "categoryName": "Telefono Movil"
     }
 
-Get Product by ID
+Get Product by ID:
 Endpoint: /productos/:ID
 Verbo: GET
 Descripción: Obtiene un producto específico por su ID.
@@ -42,7 +42,7 @@ Respuesta ejemplo:
         "categoryName": "Telefono Movil"
     }
 
-Get Products with Sort and Order
+Get Products with Sort and Order:
 Endpoint: /productos/:sort/:order
 Verbo: GET
 Descripción: Obtiene productos ordenados por un campo específico en un orden dado.
@@ -73,7 +73,7 @@ Respuesta ejemplo:
         "id_categoria": 104
     }
 
-Get Products with Filtering
+Get Products with Filtering:
 Endpoint: /productos/:filterBy/:filterValue
 Verbo: GET
 Descripción: Obtiene productos filtrados por un campo específico y su valor.
@@ -114,7 +114,7 @@ Respuesta ejemplo:
         "id_categoria": 100
     }
 
-Create Product
+Create Product:
 Endpoint: /productos
 Verbo: POST
 Descripción: Crea un nuevo producto.
@@ -143,7 +143,7 @@ Respuesta ejemplo (devuelve el ultimo elemento insertado):
         "id_categoria": 100
     }      
 
-Update Product by ID
+Update Product by ID:
 Endpoint: /productos/:ID
 Verbo: PUT
 Descripción: Actualiza un producto existente por su ID.
