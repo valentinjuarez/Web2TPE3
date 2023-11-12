@@ -5,7 +5,8 @@ Juarez, Valentin (Contacto: valenjua06@gmail.com) Miembro A y B.
 La dirección base de la API es la siguiente:
 {ruta_servidor_apache}/api
 Get All Products:
-⦿ Endpoint: /productos
+⦿ Endpoint: /productos  
+
 ⦿ Verbo: GET
 ⦿ Descripción: Obtiene todos los productos disponibles.
 ⦿ Uso: {ruta_servidor_apache}/api/productos
